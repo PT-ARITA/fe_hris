@@ -33,6 +33,21 @@
                                 </div>
                             </div>
                             <div class="form-group row">
+                                <label class="col-12">Status Golongan <span class="text-danger">*</span></label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">Assistant Manager</option>
+                                        <option value="">Director</option>
+                                        <option value="">Manager</option>
+                                        <option value="">Non Staff</option>
+                                        <option value="">Senior Staff</option>
+                                        <option value="">Staff</option>
+                                        <option value="">Supervisor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
                                 <label class="col-12">Nama Jabatan</label>
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" name="" placeholder="Nama Jabatan">
@@ -67,6 +82,19 @@
                                 <label class="col-12">Kode Jabatan</label>
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" name="" value="JB-0001">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">Assistant Manager</option>
+                                        <option value="">Director</option>
+                                        <option value="">Manager</option>
+                                        <option value="">Non Staff</option>
+                                        <option value="">Senior Staff</option>
+                                        <option value="">Staff</option>
+                                        <option value="">Supervisor</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -129,6 +157,7 @@
                         <tr>
                             <th class="text-center"><b>No.</b></th>
                             <th class="text-center"><b>Kode Jabatan</b></th>
+                            <th class="text-center"><b>Status Golongan</b></th>
                             <th class="text-center"><b>Jabatan</b></th>
                             <th class="text-center"><i class="fa fa-gear"></i></th>
                         </tr>
@@ -137,7 +166,8 @@
                         <tr>
                             <td class="text-center">1.</td>
                             <td class="text-center">JB-0001</td>
-                            <td class="">Staff IT</td>
+                            <td class="text-center">Staff</td>
+                            <td class="">Senior Programmer</td>
                             <td class="text-center">
                                 <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit">
                                     <i class="fa fa-pencil"></i>
