@@ -1,4 +1,4 @@
-<?php include '../layout/header.php'; ?>
+<?php include '../admin_layout/header.php'; ?>
 
 <main id="main-container">
     <div class="content">
@@ -51,4 +51,4 @@
     
 </main>
 
-<?php include '../layout/footer.php'; ?>
+<?php include '../admin_layout/footer.php'; ?>

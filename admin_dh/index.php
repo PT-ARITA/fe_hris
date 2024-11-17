@@ -1,7 +1,7 @@
 <?php include '../admin_layout/header.php'; ?>
 
 <main id="main-container">
-    <div class="content">
+    <div class="content" style="margin-top: 70px;">
         <div class="row gutters-tiny invisible" data-toggle="appear">
             <div class="col-6 col-md-4 col-xl-4">
                 <a class="block text-center" href="#">

@@ -332,6 +332,21 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-12">Status Golongan <span class="text-danger">*</span></label>
+                        <div class="col-md-12">
+                            <select class="form-control" name="">
+                                <option value="">Please select</option>
+                                <option value="">Assistant Manager</option>
+                                <option value="">Director</option>
+                                <option value="">Manager</option>
+                                <option value="">Non Staff</option>
+                                <option value="">Senior Staff</option>
+                                <option value="">Staff</option>
+                                <option value="">Supervisor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-12">Jabatan</label>
                         <div class="col-md-12">
                             <select class="form-control" name="">

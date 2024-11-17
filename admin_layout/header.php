@@ -42,7 +42,7 @@
 
     </head>
     <body>
-        <div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern main-content-fullrow">
+        <div id="page-container" class="sidebar-mini sidebar-o sidebar-inverse enable-page-overlay side-scroll page-header-fixed page-header-glass page-header-inverse main-content">
             <nav id="sidebar">
                 <div class="sidebar-content">
                     <div class="content-header content-header-fullrow px-15">
@@ -54,7 +54,7 @@
                     </div>
                     <div class="content-side content-side-full content-side-user px-10 align-parent">
                         <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                            <img class="img-avatar img-avatar32" src="assets/media/avatars/avatar15.jpg" alt="">
+                            <img class="img-avatar img-avatar32" src="../assets/avrifan.jpeg" alt="">
                         </div>
                         <div class="sidebar-mini-hidden-b text-center">
                             <a class="img-link" href="be_pages_generic_profile.html">
@@ -77,7 +77,10 @@
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-calendar"></i><span class="sidebar-mini-hide">Attendance</span></a>
                                 <ul>
                                     <li>
-                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'gaji')) ? 'active' : '' ?>" href="../gaji/index.php"><span class="sidebar-mini-hide">History</span></a>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'datenow')) ? 'active' : '' ?>" href="../admin_datenow"><span class="sidebar-mini-hide">Date Now</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'gaji')) ? 'active' : '' ?>" href="../admin_history"><span class="sidebar-mini-hide">History</span></a>
                                     </li>
                                     <li>
                                         <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'report')) ? 'active' : '' ?>" href="../report/index.php"><span class="sidebar-mini-hide">Ijin Karyawan</span></a>
@@ -102,7 +105,11 @@
                             </li>
 
                             <li class="nav-main-heading">
+                                <span class="sidebar-mini-visible"><i class="fa fa-users text-white"></i></span>
                                 <span class="sidebar-mini-hidden">Karyawan</span>
+                            </li>
+                            <li>
+                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_karyawan')) ? 'active' : '' ?>" href="../admin_karyawan/index.php"><i class="fa fa-user"></i><span class="sidebar-mini-hide">Karyawan</span></a>
                             </li>
                             <li>
                                 <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'transfer')) ? 'active' : '' ?>" href="../transfer/index.php"><i class="fa fa-arrows-h"></i><span class="sidebar-mini-hide">Mutasi</span></a>
@@ -113,34 +120,33 @@
                             <li>
                                 <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'resign')) ? 'active' : '' ?>" href="../resign/index.php"><i class="fa fa-user-times"></i><span class="sidebar-mini-hide">Resign</span></a>
                             </li>
-
+                            
                             <li class="nav-main-heading">
-                                <span class="sidebar-mini-hidden">Data Master</span>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_karyawan')) ? 'active' : '' ?>" href="../admin_karyawan/index.php"><i class="fa fa-users"></i><span class="sidebar-mini-hide">Karyawan</span></a>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_jabatan')) ? 'active' : '' ?>" href="../admin_jabatan/index.php"><i class="fa fa-black-tie"></i><span class="sidebar-mini-hide">Jabatan</span></a>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_divisi')) ? 'active' : '' ?>" href="../admin_divisi/index.php"><i class="fa fa-child"></i><span class="sidebar-mini-hide">Divisi</span></a>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_departement')) ? 'active' : '' ?>" href="../admin_departement/index.php"><i class="fa fa-child"></i><span class="sidebar-mini-hide">Departement</span></a>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_cabang')) ? 'active' : '' ?>" href="../admin_cabang/index.php"><i class="fa fa-map-o"></i><span class="sidebar-mini-hide">Cabang</span></a>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_regional')) ? 'active' : '' ?>" href="../admin_regional/index.php"><i class="fa fa-map"></i><span class="sidebar-mini-hide">Regional</span></a>
-                            </li>
-                            <li>
-                                <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_company')) ? 'active' : '' ?>" href="../admin_company/index.php"><i class="fa fa-building"></i><span class="sidebar-mini-hide">Perusahaan</span></a>
-                            </li>
-
-                            <li class="nav-main-heading">
+                                <span class="sidebar-mini-visible"><i class="fa fa-gear text-white"></i></span>
                                 <span class="sidebar-mini-hidden">Setting</span>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-database"></i><span class="sidebar-mini-hide">Data Master</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_jabatan')) ? 'active' : '' ?>" href="../admin_jabatan/index.php"></i><span class="sidebar-mini-hide">Jabatan</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_divisi')) ? 'active' : '' ?>" href="../admin_divisi/index.php"><span class="sidebar-mini-hide">Divisi</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_departement')) ? 'active' : '' ?>" href="../admin_departement/index.php"><span class="sidebar-mini-hide">Departement</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_cabang')) ? 'active' : '' ?>" href="../admin_cabang/index.php"><span class="sidebar-mini-hide">Cabang</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_regional')) ? 'active' : '' ?>" href="../admin_regional/index.php"><span class="sidebar-mini-hide">Regional</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_company')) ? 'active' : '' ?>" href="../admin_company/index.php"><span class="sidebar-mini-hide">Perusahaan</span></a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'jamsostek')) ? 'active' : '' ?>" href="../jamsostek/index.php"><i class="fa fa-file-zip-o"></i><span class="sidebar-mini-hide">Jamsostek</span></a>
@@ -153,7 +159,7 @@
                 </div>
             </nav>
 
-            <header id="page-header">
+            <header id="page-header" style="background-color: #2D3238">
                 <div class="content-header">
                     <div class="content-header-section">
                         <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
