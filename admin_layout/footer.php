@@ -19,7 +19,6 @@
         <script src="../admin_assets/js/plugins/summernote/summernote-bs4.min.js"></script>
         <script src="../admin_assets/js/plugins/ckeditor/ckeditor.js"></script>
         <script src="../admin_assets/js/plugins/simplemde/simplemde.min.js"></script>
-
         <script src="../admin_assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
         <script src="../admin_assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
         <script src="../admin_assets/js/pages/be_tables_datatables.min.js"></script>
@@ -35,8 +34,5 @@
         <script src="../admin_assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
         <script src="../admin_assets/js/plugins/dropzonejs/dropzone.min.js"></script>
         <script src="../admin_assets/js/plugins/flatpickr/flatpickr.min.js"></script>
-
-
-
     </body>
 </html>

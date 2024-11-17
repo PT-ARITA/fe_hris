@@ -4,7 +4,7 @@
     <div class="content" style="margin-top: 70px;">
         <div class="row gutters-tiny">
             <div class="col-md-6 col-xl-2">
-                <a class="block block-rounded block-transparent bg-gd-elegance shadow" id="b_absen">
+                <a class="block block-rounded block-transparent bg-gd-elegance shadow btn-disallow-selection" id="b_absen">
                     <div class="block-content block-content-full block-sticky-options">
                         <div class="block-options">
                             <div class="block-options-item">
@@ -19,7 +19,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-2">
-                <a class="block block-rounded block-transparent shadow bg-gd-dusk" id="b_telat">
+                <a class="block block-rounded block-transparent shadow bg-gd-dusk btn-disallow-selection" id="b_telat">
                     <div class="block-content block-content-full block-sticky-options">
                         <div class="block-options">
                             <div class="block-options-item">
@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-2">
-                <a class="block block-rounded block-transparent shadow bg-gd-sea" id="b_sakit">
+                <a class="block block-rounded block-transparent shadow bg-gd-sea btn-disallow-selection" id="b_sakit">
                     <div class="block-content block-content-full block-sticky-options">
                         <div class="block-options">
                             <div class="block-options-item">
@@ -49,7 +49,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-2">
-                <a class="block block-rounded block-transparent shadow bg-gd-aqua" id="b_ijin">
+                <a class="block block-rounded block-transparent shadow bg-gd-aqua btn-disallow-selection" id="b_ijin">
                     <div class="block-content block-content-full block-sticky-options">
                         <div class="block-options">
                             <div class="block-options-item">
@@ -64,7 +64,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-2">
-                <a class="block block-rounded block-transparent shadow bg-gd-corporate" id="b_cuti">
+                <a class="block block-rounded block-transparent shadow bg-gd-corporate btn-disallow-selection" id="b_cuti">
                     <div class="block-content block-content-full block-sticky-options">
                         <div class="block-options">
                             <div class="block-options-item">
@@ -79,7 +79,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-2">
-                <a class="block block-rounded block-transparent shadow bg-gd-cherry" id="b_alfa">
+                <a class="block block-rounded block-transparent shadow bg-gd-cherry btn-disallow-selection" id="b_alfa">
                     <div class="block-content block-content-full block-sticky-options">
                         <div class="block-options">
                             <div class="block-options-item">
@@ -372,7 +372,7 @@
         </div>
 
         <!-- KARYAWAN ALFA -->
-        <div class="row mt-4" id="cuti">
+        <div class="row mt-4" id="alfa">
             <div class="col-md-12">
                 <div class="block shadow">
                     <div class="block-header block-header-default">
@@ -579,14 +579,73 @@
 </main>
 
 <script>
-$(document).ready(function(){
-    $("#b_telat").click(function(){
-        $("#absen").hide();
+    addEventListener('load', function() {
+        let tables = {
+            absen: document.getElementById('absen'),
+            telat: document.getElementById('telat'),
+            sakit: document.getElementById('sakit'),
+            ijin: document.getElementById('ijin'),
+            cuti: document.getElementById('cuti'),
+            alfa: document.getElementById('alfa')
+        };
+
+        tables.absen.style.display = 'none';
+        tables.telat.style.display = 'none';
+        tables.sakit.style.display = 'none';
+        tables.ijin.style.display = 'none';
+        tables.cuti.style.display = 'none';
+        tables.alfa.style.display = 'none';
+
+        let btnAbsen = document.getElementById('b_absen');
+        let btnTelat = document.getElementById('b_telat');
+        let btnSakit = document.getElementById('b_sakit');
+        let btnIjin = document.getElementById('b_ijin');
+        let btnCuti = document.getElementById('b_cuti');
+        let btnAlfa = document.getElementById('b_alfa');
+
+        function hideAllTables() {
+            for (let key in tables) {
+                tables[key].style.display = 'none';
+                tables[key].style.opacity = '0';
+            }
+        }
+
+        btnAbsen.addEventListener('click', function() {
+            hideAllTables();
+            tables.absen.style.display = 'block';
+            tables.absen.style.opacity = '1';
+        });
+
+        btnTelat.addEventListener('click', function() {
+            hideAllTables();
+            tables.telat.style.display = 'block';
+            tables.telat.style.opacity = '1';
+        });
+
+        btnSakit.addEventListener('click', function() {
+            hideAllTables();
+            tables.sakit.style.display = 'block';
+            tables.sakit.style.opacity = '1';
+        });
+
+        btnIjin.addEventListener('click', function() {
+            hideAllTables();
+            tables.ijin.style.display = 'block';
+            tables.ijin.style.opacity = '1';
+        });
+
+        btnCuti.addEventListener('click', function() {
+            hideAllTables();
+            tables.cuti.style.display = 'block';
+            tables.cuti.style.opacity = '1';
+        });
+
+        btnAlfa.addEventListener('click', function() {
+            hideAllTables();
+            tables.alfa.style.display = 'block';
+            tables.alfa.style.opacity = '1';
+        });
     });
-    $("#show").click(function(){
-        $("p").show();
-    });
-});
 </script>
 
 <?php include '../admin_layout/footer.php'; ?>

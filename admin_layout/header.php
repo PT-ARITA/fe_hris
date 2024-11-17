@@ -39,7 +39,12 @@
 
         <link rel="canonical" href="https://www.latlong.net/" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css">
-
+        <style>
+            .btn-disallow-selection {
+                user-select: none;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
         <div id="page-container" class="sidebar-mini sidebar-o sidebar-inverse enable-page-overlay side-scroll page-header-fixed page-header-glass page-header-inverse main-content">
