@@ -179,7 +179,7 @@
        }
 	</script>
 
-    <script>
+    // <script>
     var video = document.getElementById("videoElement");
 
     navigator.mediaDevices.getUserMedia({ video: true, audio: false })
