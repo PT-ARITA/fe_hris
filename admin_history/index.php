@@ -6,6 +6,103 @@
             <div class="col-md-6">
                 <h5><b>History Attendance</b></h5>
             </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2 text-right">
+                <button type="button" class="btn btn-primary text-left" data-toggle="modal" data-target="#modal-filter">
+                    <i class="fa fa-laptop mr-5"></i>Filter
+                </button>
+            </div>
+            <div class="col-md-2 text-right">
+                <select class="form-control" name="">
+                    <option value="">Please select</option>
+                    <option value="">November</option>
+                    <option value="">Oktober</option>
+                    <option value="">September</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-filter" tabindex="-1" role="dialog" aria-labelledby="modal-popin" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-popin" role="document">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent mb-0">
+                        <div class="block-header bg-primary-dark">
+                            <h3 class="block-title">Filter Karyawan</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                    <i class="si si-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <div class="form-group row">
+                                <label class="col-12">Nama Perusahaan</label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">PT. Arita Prima Indonesia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12">Jenis Perusahaan</label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">Head Office</option>
+                                        <option value="">Cabang</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12">Regional</label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">Jawa Tengah</option>
+                                        <option value="">Jawa Timut</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12">Cabang</label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">Semarang</option>
+                                        <option value="">Solo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12">Divisi</label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">IT</option>
+                                        <option value="">Finance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-12">Departemen</label>
+                                <div class="col-md-12">
+                                    <select class="form-control" name="">
+                                        <option value="">Please select</option>
+                                        <option value="">IT</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary text-left" data-dismiss="modal">
+                            <i class="fa fa-search mr-5"></i>Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="block" style="font-size: 11px;">

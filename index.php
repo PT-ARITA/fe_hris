@@ -13,49 +13,47 @@
 
 <body>
     <div id="auth">
-        
-<div class="">
-    <div class="row">
-        <div class="col-md-5 col-sm-12 mx-auto">
-            <div class="">
-                <div class="card-body">
-                    <div class="text-center mb-5">
-                        <img src="assets/logo_arita.png" height="80" class='mb-4'>
-                        <h2 class="text-primary">PT. ARITA PRIMA Indonesia Tbk</h2>
-                        <h5 class="text-primary">Silakan Masuk</h5>
-                    </div>
-                    <form action="form_login_user.php" method="POST">
-                        <div class="form-group position-relative has-icon-left">
-                            <label for="code" class="text-primary">Kode Karyawan</label>
-                            <div class="position-relative">
-                                <input type="number" name="code" class="form-control" id="code">
-                                <div class="form-control-icon">
-                                    <i data-feather="user"></i>
+        <div class="row">
+            <div class="col-md-5 col-sm-12 mx-auto">
+                <div class="">
+                    <div class="card-body">
+                        <div class="text-center mb-5">
+                            <img src="assets/logo_arita.png" height="80" class='mb-4'>
+                            <h2 style="color: #021d6e;"><b>PT. ARITA PRIMA Indonesia Tbk</b></h2>
+                            <h5 style="color: #021d6e;">Silakan Masuk</h5>
+                        </div>
+                        <form action="form_login_user.php" method="POST">
+                            <div class="form-group position-relative has-icon-left">
+                                <label for="code" style="color: #021d6e;">Kode Karyawan</label>
+                                <div class="position-relative">
+                                    <input type="number" name="code" class="form-control" id="code">
+                                    <div class="form-control-icon">
+                                        <i data-feather="user"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group position-relative has-icon-left">
-                            <div class="clearfix">
-                                <label for="tgl_lahir" class="text-primary">Tanggal lahir</label>
-                            </div>
-                            <div class="position-relative">
-                                <input type="number" name="tgl_lahir" class="form-control" id="tgl_lahir">
-                                <div class="form-control-icon">
-                                    <i data-feather="info"></i>
+                            <div class="form-group position-relative has-icon-left">
+                                <div class="clearfix">
+                                    <label for="tgl_lahir" style="color: #021d6e;">Tanggal lahir</label>
+                                </div>
+                                <div class="position-relative">
+                                    <input type="number" name="tgl_lahir" class="form-control" id="tgl_lahir">
+                                    <div class="form-control-icon">
+                                        <i data-feather="info"></i>
+                                    </div>
                                 </div>
                             </div>
+                        <div class="clearfix mt-5">
+                            <a href="menu.php" class="btn btn-block btn-primary float-right"><b>- SIGN IN -</b></a>
                         </div>
-                    <div class="clearfix mt-5">
-                        <a href="menu.php" class="btn btn-block btn-primary float-right"><b>- SIGN IN -</b></a>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-    </div>
+
     <script src="assets/js/feather-icons/feather.min.js"></script>
     <script src="assets/js/app.js"></script>
     

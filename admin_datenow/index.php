@@ -489,24 +489,12 @@
                         </div>
                         <div class="block-content">
                             <div class="form-group row">
-                                <label class="col-12">NIK / Nama</label>
-                                <div class="col-md-12">
-                                    <select class="form-control" name="">
-                                        <option value="">Please select</option>
-                                        <option value="">12345 / Rifan Hardiyan</option>
-                                        <option value="">Director</option>
-                                        <option value="">Manager</option>
-                                        <option value="">Non Staff</option>
-                                        <option value="">Senior Staff</option>
-                                        <option value="">Staff</option>
-                                        <option value="">Supervisor</option>
-                                    </select>
+                                <label class="col-12">IN - OUT</label>
+                                <div class="col-md-6">
+                                    <input type="time" class="form-control" name="">
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-12">Nama Jabatan</label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="" value="Staff IT">
+                                <div class="col-md-6">
+                                    <input type="time" class="form-control" name="">
                                 </div>
                             </div>
                         </div>
@@ -514,7 +502,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary text-left" data-dismiss="modal">
-                            <i class="fa fa-save mr-5"></i>SAVE DATA
+                            <i class="fa fa-save mr-5"></i>SAVE ABSEN
                         </button>
                     </div>
                 </div>
@@ -589,7 +577,7 @@
             alfa: document.getElementById('alfa')
         };
 
-        tables.absen.style.display = 'none';
+        tables.absen.style.display = 'block';
         tables.telat.style.display = 'none';
         tables.sakit.style.display = 'none';
         tables.ijin.style.display = 'none';
