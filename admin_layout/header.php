@@ -82,15 +82,15 @@
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-calendar"></i><span class="sidebar-mini-hide">Attendance</span></a>
                                 <ul>
                                     <li>
-                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'datenow')) ? 'active' : '' ?>" href="../admin_datenow"><span class="sidebar-mini-hide">Date Now</span></a>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_datenow')) ? 'active' : '' ?>" href="../admin_datenow"><span class="sidebar-mini-hide">Date Now</span></a>
                                     </li>
                                     <li>
-                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'gaji')) ? 'active' : '' ?>" href="../admin_history"><span class="sidebar-mini-hide">History</span></a>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_gaji')) ? 'active' : '' ?>" href="../admin_history"><span class="sidebar-mini-hide">History</span></a>
                                     </li>
                                     <li>
-                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'report')) ? 'active' : '' ?>" href="../report/index.php"><span class="sidebar-mini-hide">Ijin Karyawan</span></a>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_izin')) ? 'active' : '' ?>" href="../admin_izin"><span class="sidebar-mini-hide">Izin Karyawan</span></a>
                                     </li><li>
-                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'slip')) ? 'active' : '' ?>" href="../slip/index.php"><span class="sidebar-mini-hide">Cuti Karyawan</span></a>
+                                        <a class="<?= (strpos($_SERVER['REQUEST_URI'], 'admin_cuti')) ? 'active' : '' ?>" href="../admin_cuti"><span class="sidebar-mini-hide">Cuti Karyawan</span></a>
                                     </li>
                                 </ul>
                             </li>
